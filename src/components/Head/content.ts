@@ -1,5 +1,6 @@
 export const name = 'Kostiantyn Prykhodko'
 const siteUrl = 'https://www.kprykhodko.com'
+
 const content = {
   title: `${name} Portfolio | Full-Stack Developer`,
   description: `I am ${name}, a Full-Stack Developer with over 6 years of experience in enterprise projects. I specialize in Front End development, using technologies such as React.js, Redux, and TypeScript/JS. I have a proven track record of delivering successful projects from conception to deployment, working with cross-functional teams to create elegant solutions to difficult problems. Explore my portfolio to see some of my best work and learn more about my skills and experience.`,
