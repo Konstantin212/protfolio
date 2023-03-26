@@ -1,5 +1,4 @@
-export const name = 'Kostiantyn Prykhodko'
-const siteUrl = 'https://www.kprykhodko.com'
+import { name, siteUrl } from '@utils/contactData'
 
 const content = {
   title: `${name} Portfolio | Full-Stack Developer`,

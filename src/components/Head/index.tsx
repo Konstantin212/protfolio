@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import content, { name } from './content'
+import content from './content'
+import { name } from '@utils/contactData'
 
 const HeadComponent = () => {
   return (
@@ -17,6 +18,14 @@ const HeadComponent = () => {
       <meta property="og:description" content={content.description} />
       <meta property="og:url" content={content.canonical} />
       <meta property="og:image" content={content['og:image']} />
+
+      {/* Google Fonts */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
     </Head>
   )
 }
