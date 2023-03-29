@@ -25,6 +25,7 @@ const ExperienceLine = ({
     title,
     companyName,
     date: [dateFrom, dateTo],
+    url,
     description,
   },
   index,
@@ -41,9 +42,15 @@ const ExperienceLine = ({
       >
         <h4 className="heading-4">{title}</h4>
         <div className="mb-5">
-          <span className="text-gray-400">{companyName} - </span>
+          {url ? (
+            <a className="text-gray-400 underline" href={url}>
+              {companyName}
+            </a>
+          ) : (
+            <span className="text-gray-400">{companyName}</span>
+          )}
           <span className="text-gray-400">
-            {dateFrom} - {dateTo}
+            - {dateFrom} - {dateTo}
           </span>
         </div>
         <ul className="mb-5">
