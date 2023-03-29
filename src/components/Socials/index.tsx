@@ -18,11 +18,17 @@ const Socials = ({ secondary = false }: iSocialProps) => {
             href={isEmail(social.link) ? `mailto:${social.link}` : social.link}
             title={social.title}
             className={`${
+              isEmail(social.link)
+                ? `block rounded-md ${
+                    secondary ? 'bg-primary-dark' : 'bg-white'
+                  } p-0.5`
+                : ''
+            }${
               secondary
-                ? 'block rounded-sm bg-primary-dark p-2.5 transition-colors duration-500 hover:bg-primary'
+                ? ' block rounded-sm bg-primary-dark p-2.5 transition-colors duration-500 hover:bg-primary'
                 : ''
             }
-              ${isEmail(social.link) ? 'block rounded-md bg-white p-0.5' : ''}`}
+              `}
           >
             {secondary ? social.iconSecondary : social.icon}
           </a>

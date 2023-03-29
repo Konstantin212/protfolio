@@ -1,5 +1,4 @@
 import Main from '@/components/Main'
-import Footer from '@/components/Footer'
 import HeadComponent from '@/components/Head'
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
     <>
       <HeadComponent />
       <Main />
-      <Footer />
     </>
   )
 }

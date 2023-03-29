@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
+          solid: '#FF9000',
           dark: 'rgb(2 35 60 / 90%)',
           DEFAULT: 'rgba(255, 144, 0, 0.9)',
         },

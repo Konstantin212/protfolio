@@ -4,9 +4,9 @@ import CoverLetter from '@components/Main/AboutMe/CoverLetter'
 
 const AboutMe = () => {
   return (
-    <section className="bg-white text-primary-dark dark:text-white">
+    <section className="section-styled">
       <div className="container mx-auto min-h-screen py-28">
-        <h2 className="mb-24 text-center text-5xl">About Me</h2>
+        <h2 className="heading-2">About Me</h2>
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 lg:col-span-5 xl:col-span-4">
             {<Contacts />}

@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .heading-2 {
+        @apply mb-24 text-center text-5xl
+    }
+
+    .heading-4 {
+        @apply mb-5 text-2xl
+    }
+
+    .section-styled {
+        @apply bg-white text-primary-dark dark:text-white
+    }
+}

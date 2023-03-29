@@ -75,8 +75,8 @@ export const socials: ISocial[] = [
         width="26"
         height="26"
         xmlns="http://www.w3.org/2000/svg"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         viewBox="0 0 24 24"
       >
         <path
@@ -90,8 +90,8 @@ export const socials: ISocial[] = [
         width="20"
         height="20"
         xmlns="http://www.w3.org/2000/svg"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         viewBox="0 0 24 24"
       >
         <path
