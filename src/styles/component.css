@@ -5,11 +5,16 @@
         @apply mb-24 text-center text-5xl
     }
 
+    .heading-3 {
+        @apply mb-10 text-center text-3xl
+    }
+
     .heading-4 {
         @apply mb-5 text-2xl
     }
 
-    .section-styled {
-        @apply bg-white text-primary-dark
+    .custom-bg-image {
+        background-size: 40px 40px;
+        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     }
 }

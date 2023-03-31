@@ -1,4 +1,22 @@
-export const listOfServices = [
+import { ReactElement } from 'react'
+
+interface IServices {
+  name: string
+  icon: ReactElement
+  value: string
+}
+
+interface IMajorSkills {
+  name: string
+  value: number
+}
+
+interface ISkills {
+  skill: string
+  value: string
+  colorName: string
+}
+export const listOfServices: IServices[] = [
   {
     name: 'Web Development',
     icon: (
@@ -118,5 +136,239 @@ export const listOfServices = [
     ),
     value:
       'Review code written by other developers and provide feedback and suggestions for improvement. You can also mentor junior developers and help them improve their full-stack or front-end development skills.',
+  },
+]
+
+export const majorSkills: IMajorSkills[] = [
+  {
+    name: 'HTML5',
+    value: 95,
+  },
+  {
+    name: 'CSS3',
+    value: 90,
+  },
+  {
+    name: 'JavaScript',
+    value: 90,
+  },
+  {
+    name: 'React',
+    value: 90,
+  },
+  {
+    name: 'Node.js',
+    value: 85,
+  },
+  {
+    name: 'Vue.js',
+    value: 90,
+  },
+  {
+    name: 'Communication',
+    value: 95,
+  },
+  {
+    name: 'Responsibility',
+    value: 95,
+  },
+]
+
+export const hardSkills: ISkills[] = [
+  {
+    skill: 'TypeScript',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-typeScript',
+  },
+  {
+    skill: 'AGGrid',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-aggrid',
+  },
+  {
+    skill: 'Redux/Sagas',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-reduxSagas',
+  },
+  {
+    skill: 'GraphQL',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-graphQL',
+  },
+  {
+    skill: 'Styled-Components',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-styledComponents',
+  },
+  {
+    skill: 'CSSModules',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-CSSModules',
+  },
+  {
+    skill: 'PostgreSQL',
+    value: 'w-[75%]',
+    colorName: 'bg-tech-postgreSQL',
+  },
+  {
+    skill: 'MySQL',
+    value: 'w-[75%]',
+    colorName: 'bg-tech-mySQL',
+  },
+  {
+    skill: 'MongoDB',
+    value: 'w-[70%]',
+    colorName: 'bg-tech-mongoDB',
+  },
+  {
+    skill: 'jQquery',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-jquery',
+  },
+  {
+    skill: 'Bootstrap',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-bootstrap',
+  },
+  {
+    skill: 'TailwindCSS',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-tailwindCSS',
+  },
+  {
+    skill: 'AJAX',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-ajax',
+  },
+  {
+    skill: 'BEM',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-bem',
+  },
+  {
+    skill: 'TDD',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-tdd',
+  },
+  {
+    skill: 'Unit Testing',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-unitTesting',
+  },
+  {
+    skill: 'Integration Testing',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-integrationTesting',
+  },
+  {
+    skill: 'E2E Testing',
+    value: 'w-[75%]',
+    colorName: 'bg-tech-e2eTesting',
+  },
+  {
+    skill: 'Agile',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-agile',
+  },
+  {
+    skill: 'GIT',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-git',
+  },
+  {
+    skill: 'Grunt',
+    value: 'w-[70%]',
+    colorName: 'bg-tech-grunt',
+  },
+  {
+    skill: 'Gulp',
+    value: 'w-[65%]',
+    colorName: 'bg-tech-gulp',
+  },
+  {
+    skill: 'Bower',
+    value: 'w-[60%]',
+    colorName: 'bg-tech-bower',
+  },
+  {
+    skill: 'Webpack',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-webpack',
+  },
+  {
+    skill: 'React Native (In Progress)',
+    value: 'w-[0%]',
+    colorName: 'bg-tech-reduxSagas',
+  },
+  {
+    skill: 'Python (In Progress)',
+    value: 'w-[0%]',
+    colorName: 'bg-tech-postgreSQL',
+  },
+]
+
+export const softSkills: ISkills[] = [
+  {
+    skill: 'Problem-solving',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-problemSolving',
+  },
+  {
+    skill: 'Time-management',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-timeManagement',
+  },
+  {
+    skill: 'Adaptability',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-adaptability',
+  },
+  {
+    skill: 'Attention to detail',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-attentionToDetail',
+  },
+  {
+    skill: 'Leadership',
+    value: 'w-[80%]',
+    colorName: 'bg-tech-leadership',
+  },
+  {
+    skill: 'Teamwork',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-teamwork',
+  },
+  {
+    skill: 'Positive attitude',
+    value: 'w-[95%]',
+    colorName: 'bg-tech-positiveAttitude',
+  },
+  {
+    skill: 'Business acumen',
+    value: 'w-[90%]',
+    colorName: 'bg-tech-businessAcumen',
+  },
+  {
+    skill: 'User-centric mindset',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-userCentricMindset',
+  },
+]
+
+export const languages = [
+  {
+    skill: 'Ukrainian',
+    value: 'w-[100%]',
+    colorName: 'bg-tech-bower',
+  },
+  {
+    skill: 'English (Fluent)',
+    value: 'w-[85%]',
+    colorName: 'bg-tech-aggrid',
+  },
+  {
+    skill: 'German (Beginner / In Progress)',
+    value: 'w-[30%]',
+    colorName: 'bg-tech-e2eTesting',
   },
 ]

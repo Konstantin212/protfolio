@@ -3,6 +3,7 @@ import Introduction from '@/components/Main/Introduction'
 import AboutMe from '@components/Main/AboutMe'
 import MyResume from '@components/Main/MyResume'
 import MyServices from '@components/Main/MyServices'
+import Skills from '@components/Main/Skills'
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <AboutMe />
       <MyResume />
       <MyServices />
+      <Skills />
     </main>
   )
 }
