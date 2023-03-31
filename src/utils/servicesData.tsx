@@ -297,12 +297,12 @@ export const hardSkills: ISkills[] = [
   },
   {
     skill: 'React Native (In Progress)',
-    value: 'w-[0%]',
+    value: 'w-[5%]',
     colorName: 'bg-tech-reduxSagas',
   },
   {
     skill: 'Python (In Progress)',
-    value: 'w-[0%]',
+    value: 'w-[5%]',
     colorName: 'bg-tech-postgreSQL',
   },
 ]
