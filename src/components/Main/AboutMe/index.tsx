@@ -5,7 +5,7 @@ import CoverLetter from '@components/Main/AboutMe/CoverLetter'
 const AboutMe = () => {
   return (
     <section className="section-styled">
-      <div className="container mx-auto min-h-screen py-28">
+      <div className="container mx-auto min-h-screen py-28 px-10 sm:px-5">
         <h2 className="heading-2">About Me</h2>
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 lg:col-span-5 xl:col-span-4">

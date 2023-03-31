@@ -31,14 +31,14 @@ const ExperienceLine = ({
   index,
 }: Props) => {
   return (
-    <li className="relative mb-5 flex items-center">
-      <div>
-        <div className="absolute top-10 left-1/2 ml-[-21px] flex h-11 w-11 items-center justify-center rounded-full bg-primary-solid p-1">
-          <IconSuitcase />
-        </div>
+    <li className="relative mb-5">
+      <div className="absolute left-5 top-10 ml-[-21px] flex h-11 w-11 items-center justify-center rounded-full bg-primary-solid p-1 md:left-1/2">
+        <IconSuitcase />
       </div>
       <div
-        className={`w-[45%] ${index % 2 ? 'ml-auto text-left' : 'text-right'}`}
+        className={`w-[85%] md:w-[45%] ${
+          index % 2 ? 'ml-auto text-left' : 'ml-auto text-right md:ml-0'
+        }`}
       >
         <h4 className="heading-4">{title}</h4>
         <div className="mb-5">

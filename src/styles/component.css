@@ -10,6 +10,6 @@
     }
 
     .section-styled {
-        @apply bg-white text-primary-dark dark:text-white
+        @apply bg-white text-primary-dark
     }
 }

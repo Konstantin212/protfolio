@@ -12,8 +12,8 @@ module.exports = {
       colors: {
         primary: {
           solid: '#FF9000',
-          dark: 'rgb(2 35 60 / 90%)',
-          DEFAULT: 'rgba(255, 144, 0, 0.9)',
+          dark: '#02233ce6',
+          DEFAULT: 'rgba(255, 144, 0, 1)',
         },
         'dark-primary-text': 'rgba(255, 144, 0, 0.9)',
       },
