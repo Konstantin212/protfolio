@@ -1,12 +1,19 @@
 import React from 'react'
 import { socials } from '@utils/socialHelper'
 import { isEmail } from '@utils/helpers'
+import useAnalyticsEventTracker from '@lib/hooks/useAnalyticsEventTracker'
 
 interface iSocialProps {
   secondary?: boolean
 }
 
 const Socials = ({ secondary = false }: iSocialProps) => {
+  const gaEventTracker = useAnalyticsEventTracker('Introduction')
+
+  const handleClick = (title: string) => {
+    gaEventTracker(title)
+  }
+
   return (
     <ul>
       {socials.map((social) => (
@@ -15,6 +22,7 @@ const Socials = ({ secondary = false }: iSocialProps) => {
           className="inline-block px-3 first:pl-0 last:pr-0"
         >
           <a
+            onClick={() => handleClick(social.title)}
             href={isEmail(social.link) ? `mailto:${social.link}` : social.link}
             title={social.title}
             className={`${

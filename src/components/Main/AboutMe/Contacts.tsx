@@ -1,8 +1,15 @@
 import React from 'react'
 import contactData, { name } from '@utils/contactData'
 import { isEmail, isLink } from '@utils/helpers'
+import useAnalyticsEventTracker from '@lib/hooks/useAnalyticsEventTracker'
 
 const Contacts = () => {
+  const gaEventTracker = useAnalyticsEventTracker('About')
+
+  const handleClick = (title: string) => () => {
+    gaEventTracker(title)
+  }
+
   return (
     <ul>
       {contactData.map(({ title, value }) => {
@@ -12,6 +19,7 @@ const Contacts = () => {
             <span className="block w-2/3 text-gray-400">
               {isLink(value) ? (
                 <a
+                  onClick={handleClick(title)}
                   href={isEmail(value) ? `mailto:${value}` : value}
                   title={`${title} | ${name}`}
                 >
