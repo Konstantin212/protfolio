@@ -13,25 +13,25 @@ const Skills = () => {
   return (
     <Section>
       <h2 className="heading-2">Skills</h2>
-      <h2 className="heading-3">Major Skills</h2>
+      <h2 className="heading-3 text-center">Major Skills</h2>
       <div className="mb-10 flex flex-wrap">
         {majorSkills.map((s) => (
           <SkillCircle key={s.name} {...s} />
         ))}
       </div>
-      <h2 className="heading-3">Hard Skills</h2>
+      <h2 className="heading-3 text-center">Hard Skills</h2>
       <div className="mb-10 flex flex-wrap justify-between">
         {hardSkills.map((h) => (
           <SkillProgressLine {...h} key={h.skill} />
         ))}
       </div>
-      <h2 className="heading-3">Soft Skills</h2>
+      <h2 className="heading-3 text-center">Soft Skills</h2>
       <div className="mb-10 flex flex-wrap justify-between">
         {softSkills.map((h) => (
           <SkillProgressLine {...h} key={h.skill} />
         ))}
       </div>
-      <h2 className="heading-3">Languages</h2>
+      <h2 className="heading-3 text-center">Languages</h2>
       <div className="flex flex-wrap justify-between">
         {languages.map((h) => (
           <SkillProgressLine {...h} key={h.skill} />

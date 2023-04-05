@@ -14,7 +14,7 @@ const MyServices = () => {
                 {s.icon}
               </div>
               <h4 className="heading-4 text-white">{s.name}</h4>
-              <p className="h-20 text-sm text-white opacity-70 md:h-48 lg:h-28">
+              <p className="text-sm text-white opacity-70 sm:h-20 md:h-48 lg:h-28">
                 {s.value}
               </p>
             </div>

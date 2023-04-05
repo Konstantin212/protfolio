@@ -6,7 +6,7 @@
     }
 
     .heading-3 {
-        @apply mb-10 text-center text-3xl
+        @apply mb-10 text-3xl
     }
 
     .heading-4 {

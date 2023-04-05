@@ -6,7 +6,7 @@ import React from 'react'
 const Introduction = () => {
   return (
     <section className="grid h-screen items-center justify-center bg-primary">
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center px-10 text-center sm:px-5">
         <Image
           src="/CV.jpg"
           alt="Portfolio photo"

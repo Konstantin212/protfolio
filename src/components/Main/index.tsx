@@ -4,6 +4,8 @@ import AboutMe from '@components/Main/AboutMe'
 import MyResume from '@components/Main/MyResume'
 import MyServices from '@components/Main/MyServices'
 import Skills from '@components/Main/Skills'
+import Work from '@components/Main/Work'
+import ContactMe from '@components/Main/ContactMe'
 
 const Main = () => {
   return (
@@ -13,6 +15,8 @@ const Main = () => {
       <MyResume />
       <MyServices />
       <Skills />
+      <Work />
+      <ContactMe />
     </main>
   )
 }
