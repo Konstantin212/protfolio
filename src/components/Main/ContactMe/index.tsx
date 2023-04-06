@@ -26,6 +26,7 @@ const ContactMe = () => {
           You can get the contact information in the Contacts block.
         </p>
         <button
+          title="Open Modal"
           onClick={openModal}
           className="mx-auto mt-14 block rounded-full bg-primary py-2 px-6 text-lg shadow-md transition-all hover:shadow-none"
         >

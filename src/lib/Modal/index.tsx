@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose, title, children }: Props) => {
         >
           <div className="flex items-center justify-between py-3 px-5 text-lg shadow">
             {title}
-            <button onClick={onClose}>
+            <button onClick={onClose} title="Close Modal">
               <svg
                 width="24"
                 height="24"

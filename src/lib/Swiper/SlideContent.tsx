@@ -20,7 +20,7 @@ const SlideContent = ({
   return (
     <div className="p-8 sm:h-[660px]">
       <div className="mb-5 text-gray-400">{duration}</div>
-      <h4 className="heading-4 sm:h-16">
+      <h3 className="heading-4 sm:h-16">
         {url ? (
           <a href={url} target="_blank">
             {title}
@@ -28,7 +28,7 @@ const SlideContent = ({
         ) : (
           title
         )}
-      </h4>
+      </h3>
       <div className="mb-5 text-gray-400">{role}</div>
       <p className="mb-5 sm:h-[288px]">{description}</p>
       <div className="mb-5 text-gray-400">{keyStack}</div>

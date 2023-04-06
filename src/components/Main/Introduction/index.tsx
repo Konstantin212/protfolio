@@ -12,6 +12,7 @@ const Introduction = () => {
           alt="Portfolio photo"
           width={200}
           height={200}
+          loading="lazy"
           className="mb-8 h-[200px] w-[200px] rounded-full object-cover"
         />
         <h1 className="mb-8 -rotate-6 font-kaushan text-3xl md:text-5xl">
@@ -20,11 +21,11 @@ const Introduction = () => {
           </span>
         </h1>
 
-        <h3 className="my-8 text-sm text-white md:text-base ">
+        <h2 className="my-8 text-sm text-white md:text-base ">
           <strong className="text-white">Web</strong> Developer |{' '}
           <strong className="text-white">Front End</strong> Developer |{' '}
           <strong className="text-white">Full Stack</strong> Developer
-        </h3>
+        </h2>
 
         <Socials />
       </div>

@@ -13,7 +13,7 @@ const MyServices = () => {
               <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-white">
                 {s.icon}
               </div>
-              <h4 className="heading-4 text-white">{s.name}</h4>
+              <h3 className="heading-4 text-white">{s.name}</h3>
               <p className="text-sm text-white opacity-70 sm:h-20 md:h-48 lg:h-28">
                 {s.value}
               </p>
