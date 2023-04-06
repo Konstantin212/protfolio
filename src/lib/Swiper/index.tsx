@@ -17,10 +17,10 @@ interface Props {
 const SwiperComponent = ({ slides }: Props) => {
   const { breakpoint } = useWindowResize()
   const slidesPerView = useMemo(() => {
-    if (breakpoint === 'xl') {
+    if (['xl', '2xl'].includes(breakpoint)) {
       return 3
     }
-    if (breakpoint !== '' && breakpoint !== 'sm') {
+    if (['md', 'lg'].includes(breakpoint)) {
       return 2
     }
     return 1

@@ -21,6 +21,13 @@ const useWindowResize = () => {
   const [windowSize, setWindowSize] = useState({ value: 0, breakpoint: '' })
 
   useEffect(() => {
+    setWindowSize({
+      value: window.innerWidth,
+      breakpoint: getWindowBreakpoints(window.innerWidth),
+    })
+  }, [])
+
+  useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize({
         value: window.innerWidth,
